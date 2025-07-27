@@ -1,0 +1,48 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+*.swp
+
+# Node / Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.angular-cache/
+frontend/.env
+frontend/.env.*.local
+
+# Angular build output (si usas outputPath distinto, cámbialo)
+frontend/build/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Spring Boot / Java
+backend-series-spring/target/
+backend-series-spring/.classpath
+backend-series-spring/.project
+backend-series-spring/.settings/
+backend-series-spring/.idea/
+backend-series-spring/.env
+backend-series-spring/*.iml
+
+# OS / IDE
+.idea/
+*.iml
+
+# Git filter-repo backups (por si quedan)
+.git/filter-repo/
+
+# Mac
+._*
+
+# Linux
+*~
+
+# Windows
+ehthumbs.db
+Desktop.ini
