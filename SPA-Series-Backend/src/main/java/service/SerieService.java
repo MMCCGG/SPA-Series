@@ -1,7 +1,7 @@
 package service;
 
-import com.example.seriesbackend.model.Serie;
-import com.example.seriesbackend.repository.SerieRepository;
+import model.Serie;
+import repository.SerieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
