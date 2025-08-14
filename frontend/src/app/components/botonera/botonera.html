@@ -1,0 +1,10 @@
+<div class="botonera-container">
+    @if(parent == 'card'){
+    <a [routerLink]="['/serie', id]" class="btn-modern btn-ver"> Ver detalle</a>
+
+    }@else if(parent == 'view'){
+    <a [routerLink]="['/series']" class="btn-modern btn-volver"> Volver al listado</a>
+    }
+    <a [routerLink]="['/actualizar','serie', id]" class="btn-modern btn-actualizar">Actualizar</a>
+    <button class="btn-modern btn-borrar" (click)="borrarSerie(id)">Borrar</button>
+</div>
