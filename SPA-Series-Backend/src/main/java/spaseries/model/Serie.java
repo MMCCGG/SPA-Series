@@ -1,4 +1,4 @@
-package model;
+package spaseries.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;

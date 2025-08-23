@@ -1,6 +1,6 @@
-package repository;
+package spaseries.repository;
 
-import model.Serie;
+import spaseries.model.Serie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

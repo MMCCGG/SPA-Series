@@ -1,7 +1,7 @@
-package controller;
+package spaseries.controller;
 
-import model.Serie;
-import service.SerieService;
+import spaseries.model.Serie;
+import spaseries.service.SerieService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

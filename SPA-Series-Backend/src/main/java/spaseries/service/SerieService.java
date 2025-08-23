@@ -1,7 +1,7 @@
-package service;
+package spaseries.service;
 
-import model.Serie;
-import repository.SerieRepository;
+import spaseries.model.Serie;
+import spaseries.repository.SerieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
