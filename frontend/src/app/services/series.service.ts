@@ -10,7 +10,7 @@ export class SeriesService {
   httpClient = inject(HttpClient);
 
   // conectar con la bbdd de postgres
-  private baseUrl = "http://localhost:8080/api";
+  private baseUrl = "/api";
 
   // obtener todas las series
   getAllSeries(): Observable<Serie[]> {
