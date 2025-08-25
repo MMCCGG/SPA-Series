@@ -10,10 +10,9 @@ import { Subscription } from "rxjs";
   templateUrl: "./series-list.html",
   styleUrl: "./series-list.css",
 })
-export class SeriesList implements OnDestroy {
+export class SeriesList {
   arrSeries: Serie[];
   serieService = inject(SeriesService);
-  private refreshSubscription!: Subscription;
 
   constructor() {
     this.arrSeries = [];
@@ -21,13 +20,6 @@ export class SeriesList implements OnDestroy {
 
   ngOnInit(): void {
     this.loadSeries();
-
-  }
-
-  ngOnDestroy(): void {
-    if (this.refreshSubscription) {
-      this.refreshSubscription.unsubscribe();
-    }
   }
 
   private loadSeries(): void {
@@ -35,6 +27,5 @@ export class SeriesList implements OnDestroy {
     this.serieService.getAllSeries().subscribe((data: Serie[]) => {
       this.arrSeries = data;
     });
-    
   }
 }

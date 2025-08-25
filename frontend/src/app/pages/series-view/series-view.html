@@ -1,0 +1,27 @@
+<section class="container mt-3">
+    @if (miSerie) {
+    <div class="card shadow p-3">
+        <div class="row">
+            <figure class="col-12 col-md-3">
+                <img [src]="miSerie.image" class="img-fluid rounded-start" [alt]="miSerie.title">
+            </figure>
+            <div class="col-12 col-md-9">
+                <h2>{{miSerie.title}}</h2>
+                <hr>
+                <p>Canal de retrasmisión: {{miSerie.channel}}</p>
+                <p>Creador: {{miSerie.title}}</p>
+                <p>Puntuación: {{miSerie.rating}}</p>
+                <p>Fecha: {{miSerie.dates}}</p>
+                <app-botonera [parent]="'view'" [id]="miSerie.id"></app-botonera>
+            </div>
+        </div>
+    </div>
+    } @else {
+    <!-- Loading indicator mientras se carga la serie -->
+    <div class="text-center mt-3">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+    }
+</section>
