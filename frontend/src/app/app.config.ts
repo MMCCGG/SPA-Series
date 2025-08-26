@@ -13,8 +13,6 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    // ERROR: NG0201: No provider found for `_HttpClient` - SOLUCIONADO
-    // Se añadió provideHttpClient() para resolver el error de HttpClient no encontrado
     provideHttpClient(),
   ],
 };
