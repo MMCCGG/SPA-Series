@@ -6,4 +6,5 @@ export interface Serie {
   dates: string;
   image: string;
   channel: string;
+  addedDate?: string;
 }
