@@ -1,13 +1,20 @@
-<div class="card mb-3">
+<div class="card serie-card mb-4">
     <div class="row g-0">
         <div class="col-md-4">
-            <img [src]="miSerie.image" class="img-fluid rounded-start" [alt]="miSerie.title">
+            <img [src]="miSerie.image" class="img-fluid rounded-start card-img-top" [alt]="miSerie.title">
         </div>
         <div class="col-md-8">
             <div class="card-body">
                 <h5 class="card-title">{{miSerie.title}}</h5>
-                <p class="card-text">{{miSerie.channel}}</p>
-                <p class="card-text"><small class="text-body-secondary">{{miSerie.creator}}</small></p>
+                <p class="card-text"><strong>Creador:</strong> {{miSerie.creator}}</p>
+                <p class="card-text">
+                    <span class="rating"><span class="star">⭐</span>{{miSerie.rating}}/10</span>
+                    <span class="channel-badge ms-2">{{miSerie.channel}}</span>
+                </p>
+                <p class="card-text"><strong>Fechas:</strong> {{miSerie.dates}}</p>
+                @if(miSerie.addedDate){
+                <p class="added-date">Añadida: {{miSerie.addedDate}}</p>
+                }
                 <app-botonera [parent]="'card'" [id]="miSerie.id"></app-botonera>
             </div>
         </div>
