@@ -1,0 +1,1 @@
+window.NG_APP_API_URL = "https://spa-series.onrender.com/api"; 
